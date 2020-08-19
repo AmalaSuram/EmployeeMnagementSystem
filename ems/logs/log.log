@@ -1,0 +1,4 @@
+18-08-2020 16:45:23.212 [restartedMain] INFO  com.hcl.ems.EmsApplication.logStarting - Starting EmsApplication on Intel with PID 8720 (D:\SpringBoot\ems\target\classes started by Dell in D:\SpringBoot\ems)
+18-08-2020 16:45:23.217 [restartedMain] DEBUG com.hcl.ems.EmsApplication.logStarting - Running with Spring Boot v2.3.2.RELEASE, Spring v5.2.8.RELEASE
+18-08-2020 16:45:23.220 [restartedMain] INFO  com.hcl.ems.EmsApplication.logStartupProfileInfo - No active profile set, falling back to default profiles: default
+18-08-2020 16:45:28.248 [restartedMain] INFO  com.hcl.ems.EmsApplication.logStarted - Started EmsApplication in 5.562 seconds (JVM running for 6.682)
