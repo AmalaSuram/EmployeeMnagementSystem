@@ -6,6 +6,7 @@ import static org.mockito.Mockito.verify;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -87,15 +88,15 @@ public class EmployeeServiceImplTest {
 
 	}
 
-//	@Test
-//	public void testdeleteEmployee() throws EmployeeNotFoundException {
-//
-//		Employee emp = new Employee(51784768, "puja", 3, "java");
-//
-//		employeeServiceImpl.deleteEmployee(51784768);
-//		verify(employeeRepository, times(1)).deleteById(emp.getEmpId());
-//
-//	}
+	@Test
+	public void testdeleteEmployee() throws EmployeeNotFoundException {
+
+		Employee emp = new Employee(51784768, "puja", 3, "java");
+        Mockito.when(employeeRepository.findById(51784768)).thenReturn(Optional.of(emp));
+		employeeServiceImpl.deleteEmployee(51784768);
+		verify(employeeRepository, times(1)).deleteById(emp.getEmpId());
+
+	}
 	
 	@Test
 	public void testsearchEmployee(){
